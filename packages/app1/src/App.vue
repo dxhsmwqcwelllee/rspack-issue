@@ -1,8 +1,9 @@
 <script>
-
+import Button from 'app3/Button'
 export default {
   components: {
     HelloWorld: () => import("./components/HelloWorld.vue"),
+    Button,
   },
 
   created() {
@@ -17,6 +18,7 @@ export default {
       rspack cache
     </div>
     <HelloWorld msg="Rspack + Vue" />
+    <Button text="Click me"></Button>
   </div>
 </template>
 
